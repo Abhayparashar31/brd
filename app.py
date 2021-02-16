@@ -74,19 +74,14 @@ def upload():
     if request.method == 'POST':
         # Get the file from post request
         f = request.files['file']
-
-        # # Save the file to ./uploads
-        # basepath = os.path.dirname(__file__)
-        # file_path = os.path.join(
-        #     basepath, 'uploads', secure_filename(f.filename))
-        # f.save(file_path)
-        # print(file_path)
+        basepath = os.path.dirname(__file__)
+        file_path = os.path.join(
+            basepath, 'uploads', secure_filename(f.filename))
+        f.save(file_path)
 
         # Make prediction
         preds = model_predict(f)
         return preds
     return None
-
-
 if __name__ == '__main__':
     app.run(debug=True)
