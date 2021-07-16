@@ -36,6 +36,8 @@ else:
     image = Image.open(file)
     st.image(image, use_column_width=True)
     model = tf.keras.models.load_model('ripeness.h5')
-    prediction = predict_stage(image, model)
-    st.text("Probability (0: Unripe, 1: Overripe, 2: Ripe")
-    st.write(prediction)
+    Generate_pred = st.button("Predict Ripeness Stage..")
+    if Generate_pred:
+        prediction = predict_stage(image, model)
+        st.text("Probability (0: Unripe, 1: Overripe, 2: Ripe")
+        st.write(prediction)
