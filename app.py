@@ -4,7 +4,7 @@ import numpy as np
 import streamlit as st
 
 st.write('''
-# Banana Ripeness Detection
+# Banana Ripeness Detection 🍌
 ''')
 st.write("A Image Classification Web App That Detects the Ripeness Stage of Banana")
 
