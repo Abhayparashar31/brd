@@ -39,5 +39,3 @@ else:
     Generate_pred = st.button("Predict Ripeness Stage..")
     if Generate_pred:
         prediction = predict_stage(image, model)
-        st.text("Probability (0: Unripe, 1: Overripe, 2: Ripe")
-        st.write(prediction)
