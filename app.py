@@ -8,7 +8,7 @@ st.write('''
 ''')
 st.write("A Image Classification Web App That Detects the Ripeness Stage of Banana")
 
-file = st.file_uploader("Please Upload an image of banana", type=['jpg','png'])
+file = st.file_uploader("", type=['jpg','png'])
 
 
 def predict_stage(image_data,model):
