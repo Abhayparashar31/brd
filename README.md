@@ -1,7 +1,6 @@
 # Banana Ripeness Detection 🍌
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/abhayparashar31/brd/main/app.py)
 
-### Classify Banana Into Three Different Categories
 <img src="src/brd.gif" width="100%"/>
 
 ### Features
