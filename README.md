@@ -15,7 +15,7 @@
 [Try it Now](https://share.streamlit.io/abhayparashar31/brd/main/app.py)
 
 ### Model Architecture
-<img src='src/arc.png' width="100%"/>
+<img src='src/arc.png' width="40%"/>
 
 ## Contributing
 
